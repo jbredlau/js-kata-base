@@ -1,0 +1,10 @@
+tasks:
+ - name: Setup Gitpod and Run Tests
+   init: |
+    npm install
+    curl -sL install.mob.sh | sudo sh
+   command: npm run test:watch
+   
+vscode:
+  extensions:
+    - dbaeumer.vscode-eslint
