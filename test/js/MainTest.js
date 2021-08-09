@@ -32,5 +32,8 @@ describe('MyClass', function () {
     it('should convert MMMMM to 5000', function () {
       expect(MyClass.convertRomanToNumber('MMMMM')).to.be.equal(5000)
     })
+    it('should convert empty string to 0', function () {
+      expect(MyClass.convertRomanToNumber('')).to.be.equal(0)
+    })
   })
 })
